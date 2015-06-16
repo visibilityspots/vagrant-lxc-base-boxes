@@ -48,4 +48,4 @@ sed -i "s/<TODAY>/${NOW}/" metadata.json
 log "Create actual vagrant box"
 tar -czf $NAME.box ./*
 cd ../../
-ls $WORKING_DIR/$NAME.box
+warn "$NAME.box has been compiled"
