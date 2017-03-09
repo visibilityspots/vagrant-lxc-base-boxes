@@ -2,4 +2,4 @@
 /output
 rootfs*
 custom
-/update*
+#/update*

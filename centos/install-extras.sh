@@ -19,6 +19,12 @@ utils.lxc.attach yum update -y
 PACKAGES=(vim curl wget man-db bash-completion python-software-properties ca-certificates sudo nfs-common openssh-server)
 utils.lxc.attach yum install ${PACKAGES[*]} -y
 
+info 'initalizing common public key'
+utils.lxc.attach wget https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub -O .ssh/authorized_keys
+utils.lxc.attach chmod 700 .ssh
+utils.lxc.attach chmod 600 .ssh/authorized_keys
+utils.lxc.attach chown -R vagrant:vagrant .ssh
+
 # Disabling iptables modules reloading
 utils.lxc.attach sed -i 's/IPTABLES_MODULES_UNLOAD=\"yes\"/IPTABLES_MODULES_UNLOAD=\"no\"/g' /etc/sysconfig/iptables-config
 

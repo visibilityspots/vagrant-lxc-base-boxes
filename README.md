@@ -18,6 +18,7 @@ This repository contains a set of scripts for creating base boxes for usage with
   - Sid x86_64
 * CentOS
   - 6 x86_64
+  - 7 x86_64
 
 ## Building the boxes
 
@@ -60,7 +61,14 @@ _**NOTE:** None of the base boxes below have a provisioner pre-installed_
 | Ubuntu Precise 12.04 x86_64 | [fgrehm/precise64-lxc](https://vagrantcloud.com/fgrehm/precise64-lxc) |
 | Ubuntu Trusty 14.04 x86_64 | [fgrehm/trusty64-lxc](https://vagrantcloud.com/fgrehm/trusty64-lxc) |
 | Debian Wheezy 7 x86_64 | [fgrehm/wheezy64-lxc](https://vagrantcloud.com/fgrehm/wheezy64-lxc) |
-| CentOS 6 x86_64 | [fgrehm/centos6-64-lxc](https://vagrantcloud.com/fgrehm/centos6-64-lxc) |
+
+_**NOTE:** the base boxes below have the puppet provisioner pre-installed_
+
+| Distribution | VagrantCloud box |
+| CentOS 6 x86_64 | [visibilityspots/centos-6.x-puppet-3.x](https://atlas.hashicorp.com/visibilityspots/boxes/centos-6.x-puppet-3.x) |
+| CentOS 6 x86_64 | [visibilityspots/centos-6.x-puppet-4.x](https://atlas.hashicorp.com/visibilityspots/boxes/centos-6.x-puppet-4.x) |
+| CentOS 7 x86_64 | [visibilityspots/centos-7.x-puppet-3.x](https://atlas.hashicorp.com/visibilityspots/boxes/centos-7.x-puppet-3.x) |
+| CentOS 7 x86_64 | [visibilityspots/centos-7.x-puppet-4.x](https://atlas.hashicorp.com/visibilityspots/boxes/centos-7.x-puppet-4.x) |
 
 
 ## What makes up for a vagrant-lxc base box?

@@ -56,3 +56,7 @@ lxc.cgroup.devices.allow = c 10:200 rwm # /dev/net/tun
 # Blacklist some syscalls which are not safe in privileged
 # containers
 lxc.seccomp = /usr/share/lxc/config/common.seccomp
+
+## USER SPACE
+#lxc.id_map = u 0 100000 65536
+#lxc.id_map = g 0 100000 65536
