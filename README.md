@@ -65,6 +65,7 @@ _**NOTE:** None of the base boxes below have a provisioner pre-installed_
 _**NOTE:** the base boxes below have the puppet provisioner pre-installed_
 
 | Distribution | VagrantCloud box |
+| ------------ | ---------------- |
 | CentOS 6 x86_64 | [visibilityspots/centos-6.x-puppet-3.x](https://atlas.hashicorp.com/visibilityspots/boxes/centos-6.x-puppet-3.x) |
 | CentOS 6 x86_64 | [visibilityspots/centos-6.x-puppet-4.x](https://atlas.hashicorp.com/visibilityspots/boxes/centos-6.x-puppet-4.x) |
 | CentOS 7 x86_64 | [visibilityspots/centos-7.x-puppet-3.x](https://atlas.hashicorp.com/visibilityspots/boxes/centos-7.x-puppet-3.x) |
